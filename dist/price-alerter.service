@@ -1,0 +1,11 @@
+[Unit]
+Description=Price Alerter
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/price-alerter
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
